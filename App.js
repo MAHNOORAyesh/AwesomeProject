@@ -39,6 +39,7 @@ const MainScreen=({navigation})=>{
   return(
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen name='GK Portions' component={TabNavigator}/>
+      <Tab.Screen name='Text-To-Speech' component={TTSApp}/>
       <Tab.Screen name='Settings' component={SettingsApp}/>
     </Tab.Navigator>
   )
@@ -58,6 +59,7 @@ export default function APP(){
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name='Welcome' component={WelcomeApp}/>
+        <Stack.Screen name='SignUp' component={SignupScreen}/>
         <Stack.Screen name='Parent' component={App}/>
       </Stack.Navigator>
     </NavigationContainer>
