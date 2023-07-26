@@ -7,6 +7,9 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import WelcomeApp from './screens/Welcome';
 import SettingsApp from './screens/Settings';
 import AboutApp from './screens/About';
+import TTSApp from './screens/texttospeech';
+import SignupScreen from './screens/signup';
+
 
 import AbbreviationApp from './screens/Abbscreen';
 import CountriesApp from './screens/Country';
