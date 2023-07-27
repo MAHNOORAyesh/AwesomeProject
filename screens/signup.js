@@ -5,9 +5,7 @@ const SignupScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignup = () => {
-    // Perform signup and account creation here (e.g., send data to backend)
-    // For this example, let's assume the signup was successful and directly navigate to Home
+  const handleSignup = () =>{
     navigation.navigate('Home');
   };
 
