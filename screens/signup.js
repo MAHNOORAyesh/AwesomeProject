@@ -5,8 +5,8 @@ const SignupScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignup = () =>{
-    navigation.navigate('Home');
+  const handleSignup = () => {
+    navigation.navigate('Parent', { screen: 'SignUp' });
   };
 
   return (
@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor:'lightgrey'
   },
   input: {
     width: '80%',
