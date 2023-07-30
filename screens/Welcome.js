@@ -5,7 +5,7 @@ import { View, Text, StyleSheet,Image,Pressable,ImageBackground} from 'react-nat
 
 export default WelcomeApp=({navigation})=>{
   const handleStart=()=>{
-    navigation.navigate('Parent', { screen: 'Welcome' })
+    navigation.navigate('SignUp', { screen: 'Welcome' })
   }
   return(
     <View style={styles.container}>
