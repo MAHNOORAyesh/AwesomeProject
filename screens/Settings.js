@@ -1,5 +1,5 @@
-import React, { useState,useEffect } from 'react';
-import { View, Text, StyleSheet, Switch ,StatusBar,useColorScheme} from 'react-native';
+import React, { useState} from 'react';
+import { View, Text, StyleSheet, Switch } from 'react-native';
 
 export default SettingsApp=({navigation})=> {
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
@@ -9,22 +9,22 @@ export default SettingsApp=({navigation})=> {
   };
 
   return (
-    <View style={styles.settingItem}>
-      <Text style={styles.settingLabel}>Notifications</Text>
-      <Switch
-        value={notificationsEnabled}
-        onValueChange={handleNotificationsToggle}
-      />
+    <View style={styles.container}>
+      <View style={styles.settingItem}>
+        <Text style={styles.settingLabel}>Notifications</Text>
+        <Switch
+          value={notificationsEnabled}
+          onValueChange={handleNotificationsToggle}
+        />
+      </View>
     </View>
-
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    padding: 20,
+    backgroundColor: 'lightgrey'
   },
   settingItem: {
     flexDirection: 'row',
